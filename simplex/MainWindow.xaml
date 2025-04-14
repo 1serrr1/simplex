@@ -26,6 +26,15 @@
             <TabItem Header="Результат">
                 <StackPanel Margin="20">
                     <TextBlock Name="ResultTextBlock" FontSize="16" FontWeight="Bold"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="Экспорт в TXT" Click="ExportToTxtButton_Click" 
+                    Width="150" Height="30" Margin="0,0,10,0"
+                    Background="#FF4CAF50" Foreground="White"/>
+
+                        <Button Content="Экспорт в Excel" Click="ExportToExcelButton_Click" 
+                    Width="150" Height="30"
+                    Background="#FF2196F3" Foreground="White"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
         </TabControl>
